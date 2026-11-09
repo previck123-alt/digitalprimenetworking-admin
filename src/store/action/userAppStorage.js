@@ -118,7 +118,7 @@ export const checkIfAdminIsLoggedIn = () => {
 
 //https://vault-bitverafinance-backend.onrender.xxxxxcom
 
-      response = await fetch(`https://digital-backend-b0es.onrender.com/adminbytoken`, {
+      response = await fetch(`https://digitalprimenetworking-backend.onrender.com/adminbytoken`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -139,7 +139,7 @@ export const checkIfAdminIsLoggedIn = () => {
 export const loginAdmin = (data) => {
   return async (dispatch, getState) => {
     try {
-      let response = await fetch('https://digital-backend-b0es.onrender.com/adminlogin', {
+      let response = await fetch('https://digitalprimenetworking-backend.onrender.com/adminlogin', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -197,7 +197,7 @@ export const loginAdmin = (data) => {
 export const signupAdmin = (data) => {
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/adminsignup`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/adminsignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -262,7 +262,7 @@ export const fetchUsers = () => {
       adminToken
     } = getState().userAuth
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/users`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/users`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -314,7 +314,7 @@ export const deleteUser = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/users/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/users/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -366,7 +366,7 @@ export const updateUser = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/users/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/users/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -422,7 +422,7 @@ export const fetchDeposits = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/deposits`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/deposits`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -479,7 +479,7 @@ export const deleteDeposit = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/deposits/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/deposits/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -531,7 +531,7 @@ export const updateDeposit = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/deposits/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/deposits/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -586,7 +586,7 @@ export const fetchWithdraws = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/withdraws`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/withdraws`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -637,7 +637,7 @@ export const deleteWithdraw = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/withdraws/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/withdraws/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -688,7 +688,7 @@ export const updateWithdraw = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/withdraws/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/withdraws/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -749,7 +749,7 @@ export const fetchTrades = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/trades`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/trades`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -801,7 +801,7 @@ export const deleteTrade = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/trades/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/trades/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -852,7 +852,7 @@ export const updateTrade = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/trades/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/trades/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -907,7 +907,7 @@ export const createTrade = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/trades`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/trades`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -966,7 +966,7 @@ export const fetchPackages = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/packages`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/packages`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -1017,7 +1017,7 @@ export const deletePackage = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/packages/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/packages/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -1068,7 +1068,7 @@ export const updatePackage = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/packages/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/packages/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1121,7 +1121,7 @@ export const createPackage = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/packages`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/packages`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1186,7 +1186,7 @@ export const fetchInvestments = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/investments`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/investments`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -1238,7 +1238,7 @@ export const deleteInvestment = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/investments/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/investments/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -1292,7 +1292,7 @@ export const updateInvestment = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/investments/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/investments/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1339,10 +1339,10 @@ export const updateInvestment = (data) => {
   }
 }
 
-//https://digital-backend-b0es.onrender.com
+//https://digitalprimenetworking-backend.onrender.com
 
 
-//https://digital-backend-b0es.onrender.com
+//https://digitalprimenetworking-backend.onrender.com
 
 export const addCopyTrade = (data) => {
   return async (dispatch, getState) => {
@@ -1351,7 +1351,7 @@ export const addCopyTrade = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/copy-trade`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/copy-trade`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1407,7 +1407,7 @@ export const updateCopyTrade = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/update-copy-trade/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/update-copy-trade/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1464,7 +1464,7 @@ export const fetchCopyTrade = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/copy-trade`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/copy-trade`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -1517,7 +1517,7 @@ export const deleteCopyTrade = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/copy-trade/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/copy-trade/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -1570,7 +1570,7 @@ export const fetchDepositHandlers = () => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/deposit-handlers`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/deposit-handlers`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -1601,7 +1601,7 @@ export const deleteDepositHandler = (id) => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/deposit-handlers/${id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/deposit-handlers/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -1628,7 +1628,7 @@ export const updateDepositHandler = (data) => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/deposit-handlers/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/deposit-handlers/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1656,7 +1656,7 @@ export const createDepositHandler = (data) => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/deposit-handlers`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/deposit-handlers`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1687,9 +1687,9 @@ export const updateAdmin = (data) => {
       adminToken
     } = getState().userAuth//https://localhostxxxx:9090
     //https://backend.SWNxx.net
-    //https://digital-backend-b0es.onrender.com
+    //https://digitalprimenetworking-backend.onrender.com
     try {
-      let response = await fetch(`https://digital-backend-b0es.onrender.com/admin/${data._id}`, {
+      let response = await fetch(`https://digitalprimenetworking-backend.onrender.com/admin/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1741,7 +1741,7 @@ export const sendEmailAPI = (data) => {
     const { adminToken } = getState().userAuth;
 
     try {
-      const response = await fetch(`https://digital-backend-b0es.onrender.com/send-email`, {
+      const response = await fetch(`https://digitalprimenetworking-backend.onrender.com/send-email`, {
         method: "POST", 
         headers: {
           "Content-Type": "application/json",
